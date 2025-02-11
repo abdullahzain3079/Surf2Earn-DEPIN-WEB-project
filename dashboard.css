@@ -1,0 +1,557 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.sidebar {
+display: flex;
+flex-direction: column;
+justify-content: space-between; /* Distribute space between items */
+}
+
+.logout-container {
+margin-top: auto; /* Push the logout button to the bottom */
+padding: 20px; /* Add some padding */
+}
+
+.logout-item {
+display: flex;
+align-items: center; /* Center the icon and text vertically */
+justify-content: center; /* Center the text */
+}
+
+.logout-icon {
+width: 24px; /* Set icon width */
+height: 24px; /* Set icon height */
+margin-right: 10px; /* Space between icon and text */
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #e0f7fa, #dcedc8);
+    height: 100vh;
+    text-align: center;
+}
+/* Sidebar Styles */
+.sidebar {
+    width: 280px;
+    position: fixed;
+    /* background: linear-gradient(135deg, #0007c8, #64dd17); */
+    background-image:"sidebar.jpg";
+    /* background-image: url(sidebar.jpg); */
+    border-image-width: 100px;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    /* margin:20px; */
+    border-right: 3px solid #cde708;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-size: cover;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    border-color: white;
+
+    border:1px solid white;
+    color: rgba(5, 253, 199, 0.759);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.nav-item:hover {
+    /* background: rgba(224, 6, 224, 0.367); */
+   background-color: black;
+    transform: scale(1.09);
+    color: #f1efef;
+}
+
+.nav-item.active {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 300px; /* Space for the fixed sidebar */
+    /* overflow-y: auto; */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-title {
+    background-color: #6df604;
+    border: 2px solid rgb(1, 0, 0);
+    padding: 10px 20px;
+    display: flex;
+    /* color: ; */
+    /* align-self: inline; */
+    font-size: medium;
+    border-radius: 8px;
+}
+
+.referral-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 10px 20px;
+    margin-left: 600px;
+    border-radius: 20px;
+    border: 1px solid #020000;
+}
+
+.share-button {
+    background-color: #9fff1a;
+
+    border: 2px solid rgb(1, 0, 0);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+} 
+ .profile {
+    background-color: #9fff1a;
+
+    border: 5px solid rgb(255, 255, 255);
+    padding: 8px 16px;
+    border-radius: 80px;
+    cursor: pointer;
+}
+
+
+.welcome-box {
+    margin-top: 70px;
+    background-color: #bffe02;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.earnings-grid {
+    display: grid;
+    grid-template-columns: 2fr 0fr;
+    gap: 20px;
+    justify-self:  center;
+    
+}
+.status {
+    display: flex;
+    justify-self: center;
+    height: 500px;
+    width: 900px;
+    background-color: #b9f505;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid rgb(1, 0, 0);
+}
+.earnings-card {
+    background-color: #b9f505;
+    padding: 20px;
+    
+    border-radius: 12px;
+    border: 2px solid rgb(1, 0, 0);
+}
+.earnings-cardd {
+    background-color: #b9f505;
+   flex-direction:row;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid rgb(1, 0, 0);
+}
+.earnings-value {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid rgb(1, 0, 0);
+    border-radius: 8px;
+    /* margin-top: 10px; */
+    margin: 10px;
+}
+.slogan {
+    justify-self: center;
+width: 100%; /* Full width */
+height: 300px; /* Set a specific height */
+background-image: url("surf.jpeg"); /* Use your image */
+background-size: cover; /* Cover the entire area */
+background-position: center; /* Center the image */
+border: 2px solid rgb(251, 251, 251);
+border-radius: 8px;
+margin: 10px 0; /* Adjust margin for better spacing */
+}
+.earnings-number {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+      
+    justify-self:center ;
+    align-items: center;
+    gap: 10px;
+}
+
+.coin-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #9fff1a;
+    border-radius: 50%;
+}
+
+.stats-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.stats-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.chart-placeholder {
+    height: 200px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+.cbutton{
+    width: 100px;
+    height: 100px;
+    justify-self:center ;
+    background-image: "power.png";
+    border-radius: 50px;
+    border:2px solid black;
+}
+#video-background {
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+object-fit: cover;
+z-index: -1;
+}
+
+.footer {
+/* display: flex; */
+    width: 100%;
+    background-color: #6ff403;
+    color: white;
+    
+    text-align: center;
+    /* margin-top: auto; */
+    /* position:absolute; */
+    /* flex: 0; */
+    /* position: relative; */
+    padding: 40px;
+    /* margin-left: 200px; */
+    /* overflow-y: auto; */
+    /* height: 100vh; /* */
+    border-radius: 5px;
+}
+
+.status-box {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.power-button {
+    width: 80px;
+    height: 80px;
+    background-color: #b6ff00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.power-button::before {
+    content: '\26A1'; /* Power symbol */
+    font-size: 30px;
+    color: black;
+}
+.status-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+.wid{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.pos {
+    background-color: rgb(22, 9, 9);
+
+border-radius: 5px;
+margin-top: 21px;
+margin-left:50px;
+background-color: rgb(244, 238, 238);
+width: 450px;
+height: 450px;
+/* padding: 5px; */
+}
+.progress-container {
+    width: 100%;
+    background: #eef8d8;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.progress-bar {
+    width: 75%; /* Adjust for network quality */
+    height: 20px;
+    background: #b6ff00;
+    border-radius: 20px;
+}
+.network-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+.message {
+    font-size: 14px;
+    color: #666;
+}
+
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-buttons a {
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.footer-buttons a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.social-handles {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-handles a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-handles img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-handles img:hover {
+    transform: scale(1.1);
+}
+
+.capacity-candles {
+background-color: white;
+border-radius: 12px;
+padding: 20px;
+border: 2px solid rgb(1, 0, 0);
+margin-top: 20px;
+text-align: center;
+}
+
+.capacity-candles h2 {
+margin-bottom: 15px;
+font-weight: bold;
+color: #333;
+}
+
+.ip-address {
+margin-bottom: 15px;
+font-weight: bold;
+color: #555;
+}
+
+.ip-address span {
+color: #4caf50; /* Highlight the IP address */
+}
+.ftrh3{
+color: #000;
+}
+.candlestick-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 30px; /* Height of the candles */
+position: relative;
+margin-bottom: 10px; /* Space between candles and labels */
+}
+
+.candlestick {
+height: 100%; /* Full height of the container */
+border-radius: 5px; /* Rounded corners */
+transition: background-color 0.3s ease;
+}
+
+.upload {
+background-color: #f44336; /* Red for upload */
+}
+
+.download {
+background-color: #4caf50; /* Green for download */
+}
+
+.candlestick.upload:hover {
+background-color: #ff7961; /* Lighter red on hover */
+}
+
+.candlestick.download:hover {
+background-color: #81c784; /* Lighter green on hover */
+}
+
+.speed-labels {
+display: flex;
+justify-content: space-between;
+font-weight: bold;
+color: #000;
+}
+.earnings-statistics {
+background-color: white;
+border-radius: 12px;
+padding: 20px;
+border: 2px solid rgb(1, 0, 0);
+margin-top: 20px;
+}
+
+.stats-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.refresh-button {
+background-color: #9fff1a;
+border: 2px solid rgb(1, 0, 0);
+padding: 8px 16px;
+border-radius: 20px;
+cursor: pointer;
+}
+
+.candlestick-container {
+display: flex;
+gap: 10px;
+justify-content: inline ;
+gap: 20px;
+align-items: flex-end;
+height: 200px; /* Set the height of the chart */
+margin-bottom: 10px; /* Space between chart and date labels */
+}
+
+.candlestick {
+width: 30px; /* Width of each candle */
+background-color: #b9f505; /* Default candle color */
+border-radius: 5px 5px 0 0; /* Rounded top corners */
+transition: background-color 0.3s ease;
+}
+
+.candlestick:hover {
+background-color: #76c7b1; /* Change color on hover */
+}
+
+.date-labels {
+display: flex;
+justify-content: inline;
+gap: 5px;
+font-weight: bold;
+color: #000;
+}
+
+
+.internet-speed {
+background-color: rgb(74, 247, 5);
+border-radius: 12px;
+padding: 20px;
+border: 2px solid rgb(1, 0, 0);
+margin-top: 20px; /* Space above the section */
+text-align: center; /* Center the text */
+}
+
+.internet-speed h2 {
+margin-bottom: 15px; /* Space below the heading */
+font-weight: bold;
+color: #333; /* Heading color */
+}
+
+.speed-display {
+display: flex;
+justify-content: center;
+align-items: baseline; /* Align values and units */
+margin-bottom: 10px; /* Space between speed displays */
+}
+
+.speed-value {
+font-size: 24px; /* Larger text for speed */
+font-weight: bold;
+color: #4caf50; /* Color for the speed value */
+margin-right: 5px; /* Space between value and unit */
+}
+
+.speed-unit {
+font-size: 16px; /* Smaller text for unit */
+color: #666; /* Color for the unit */
+}
+.boxes{
+display: flex;
+size-adjust: auto;
+border-radius: 5px;
+
+}
+.tradingview-widget-container{
+
+background-color:white;
+}
+
+
